@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { CounterContext } from '../context/CounterContext'
-
+import useAppContext from '../hook/useAppContext'
 
 const Home = () => {
 
-    const { count } = useContext(CounterContext);
+    const { count } = useAppContext();
+
     return (
         <div>
             <h1>Home</h1>
