@@ -1,4 +1,5 @@
 import useAppContext from '../hook/useAppContext'
+import ChangeContext from '../components/ChangeContext'
 
 const Home = () => {
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <h1>Home</h1>
             <p>Valor do contador: {count}</p>
+            <ChangeContext />
         </div>
     )
 }
